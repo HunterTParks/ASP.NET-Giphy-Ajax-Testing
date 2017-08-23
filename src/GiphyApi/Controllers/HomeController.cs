@@ -23,12 +23,12 @@ namespace GiphyApi.Controllers
         [HttpPost]
         public IActionResult GetGif(string search, string limit)
         {
-            List<Gif> results = Gif.GetGif(search, limit);
+            Gif.listOfGifs = Gif.GetGif(search, limit);
             return RedirectToAction("ViewGifs");
         }
         public IActionResult ViewGifs()
         {
-            return View(listOfGif);
+            return View(Gif.listOfGifs);
         }
 
     }

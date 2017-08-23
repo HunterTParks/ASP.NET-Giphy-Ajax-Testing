@@ -1,12 +1,14 @@
-﻿@model List<GiphyApi.Models.Gif>
+﻿@model GiphyApi.Models.Gif
 
-@foreach (var gif in Model)
+@*@foreach (var gif in Model)
 {
     if(gif == null)
     {    }
     else
     {
-        <video src="@gif"></video>
+        <img src="@gif.url">
     }
-}
+}*@
+
+<img src="@Model.url">
 testing
