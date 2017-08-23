@@ -19,8 +19,8 @@ namespace GiphyApi.Models
         public string mp4_size { get; set; }
         public string webp { get; set; }
         public string webp_size { get; set; }
-        public static Gif listOfGifs;
-        public static Gif GetGif(string search, string limit)
+        public static List<Gif> listOfGifs;
+        public static List<Gif> GetGif(string search, string limit)
         {
             var client = new RestClient("http://api.giphy.com/v1/gifs/");
             var request = new RestRequest("search?q=" + search + "&api_key=" + EnvironmentVariables.GiphyKey + "&limit=" + limit);
@@ -33,8 +33,20 @@ namespace GiphyApi.Models
             JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(response.Content);
 
             Console.WriteLine(jsonResponse);
+            List<Gif> gifList = new List<Gif> { };
 
-            Gif gifList = JsonConvert.DeserializeObject<Gif>(jsonResponse["data"][0]["images"]["original"].ToString());
+            int cou;
+            Int32.TryParse(limit, out cou);
+
+            for(int i = 0; i <= cou - 1; i++)
+            {
+                Console.WriteLine(i);
+                Gif gif = JsonConvert.DeserializeObject<Gif>(jsonResponse["data"][i]["images"]["original"].ToString());
+                if(gif != null)
+                {
+                    gifList.Add(gif);
+                }
+            }
             return gifList;
         }
         public static Task<IRestResponse> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)
