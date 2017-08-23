@@ -1,0 +1,12 @@
+﻿@model List<GiphyApi.Models.Gif>
+
+@foreach (var gif in Model)
+{
+    if(gif == null)
+    {    }
+    else
+    {
+        <video src="@gif"></video>
+    }
+}
+testing
