@@ -1,4 +1,9 @@
-﻿@using (Html.BeginForm())
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
 {
     <label for="search">Search</label>
     <input type="text" name="search" />
@@ -9,9 +14,3 @@
 }
 
 <div id="result"></div>
-
-
-
-<script>
-
-</script>

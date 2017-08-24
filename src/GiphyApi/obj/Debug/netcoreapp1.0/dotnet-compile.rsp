@@ -1,5 +1,5 @@
---temp-output:c:\Users\epicodus\documents\visual studio 2015\Projects\GiphyApi\src\GiphyApi\obj\Debug\netcoreapp1.0\
---out:c:\Users\epicodus\documents\visual studio 2015\Projects\GiphyApi\src\GiphyApi\bin\Debug\netcoreapp1.0\GiphyApi.dll
+--temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\giphy-api\src\GiphyApi\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\giphy-api\src\GiphyApi\bin\Debug\netcoreapp1.0\GiphyApi.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -171,9 +171,9 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll
---resource:"c:\Users\epicodus\documents\visual studio 2015\Projects\GiphyApi\src\GiphyApi\obj\Debug\netcoreapp1.0\GiphyApidotnet-compile.deps.json",GiphyApi.deps.json
-c:\Users\epicodus\documents\visual studio 2015\Projects\GiphyApi\src\GiphyApi\Program.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\GiphyApi\src\GiphyApi\Startup.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\GiphyApi\src\GiphyApi\Controllers\HomeController.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\GiphyApi\src\GiphyApi\Models\EnvironmentVariables.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\GiphyApi\src\GiphyApi\Models\Gif.cs
+--resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\giphy-api\src\GiphyApi\obj\Debug\netcoreapp1.0\GiphyApidotnet-compile.deps.json",GiphyApi.deps.json
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\giphy-api\src\GiphyApi\Program.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\giphy-api\src\GiphyApi\Startup.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\giphy-api\src\GiphyApi\Controllers\HomeController.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\giphy-api\src\GiphyApi\Models\EnvironmentVariables.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\giphy-api\src\GiphyApi\Models\Gif.cs

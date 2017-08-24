@@ -1,4 +1,8 @@
-﻿@model List<GiphyApi.Models.Gif>
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<GiphyApi.Models.Gif>
 
 @foreach (var gif in Model)
 {
@@ -10,5 +14,22 @@
     }
 }
 
-@*<img src="@Model.url">
-testing*@
+<div id="more"></div>
+
+<button class="showOptions">More gifs</button>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".showOptions").click(function () {
+            $.ajax({
+                url: '@Url.Action("GetGif")',
+                type: "GET",
+                dataType: "html",
+                success: function (result) {
+                    $('#more').html(result);
+
+                }
+            });
+        });
+    });
+</script>

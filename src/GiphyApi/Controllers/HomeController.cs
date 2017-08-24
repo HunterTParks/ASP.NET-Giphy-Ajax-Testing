@@ -31,5 +31,9 @@ namespace GiphyApi.Controllers
             return View(Gif.listOfGifs);
         }
 
+        public IActionResult ShowOptions()
+        {
+            return View();
+        }
     }
 }
