@@ -34,6 +34,11 @@ namespace GiphyApi.Models
 
             Console.WriteLine(jsonResponse);
             List<Gif> gifList = new List<Gif> { };
+            if(listOfGifs != null)
+            {
+                gifList = listOfGifs;
+
+            }
 
             int cou;
             Int32.TryParse(limit, out cou);
